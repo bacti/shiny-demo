@@ -1,0 +1,34 @@
+---
+output:
+    html_document:
+        keep_md: true
+---
+
+## The Big Five Tech Companies
+
+**Hai Bacti**  
+`r format(Sys.Date(), format = '%B %d, %Y')`
+
+### About
+
+The Big Five Tech Giants [`FAAMG`](https://en.wikipedia.org/wiki/FAAMG) includes Facebook, Amazon, Apple, Microsoft and Google. Their total value is over $2 trillion USD. In this page, we will apply `quantmod` and `dygraphs` packages to make visualized analysis and simple prediction of their stock values on NASDAQ. 
+
+The [`quantmod`](http://www.quantmod.com/) package provides a framework for quantitative financial modeling and trading. It provides a rapid prototyping environment that makes modeling easier by removing the repetitive workflow issues surrounding data management and visualization.
+
+The [`dygraphs`](http://dygraphs.com/) package is an R interface to the same name JavaScript charting library. It provides rich facilities for charting time-series data in R.
+
+### Instructions
+
+The dygraphs chart is fully interactive: as your mouse moves over the series individual values are displayed. You can also select regions of the graph to zoom into and then double-click to zooms out.
+
+Additionally, in the app we provides several inputs to manipulate the data and plot.
+
++ User can select which stock to analyse on the **Watchlist** panel.
++ They could make a closer look on a specific period of time back from now. We defined 7 buttons for that purpose correspodingly `1M` (1 month), `3M` (3 months), `6M` (6 months), `1Y` (1 year), `5Y` (5 years), `YTD` (Year to Date) and `All` (All the Time).
++ Or they could choose any date window they want using the Date Range Input.
+
+We also provides 3 very basic analysis tools in the page. Users could toggle their visibility in the chart with their checkbox options.
+
++ [Candlestick Charts](https://en.wikipedia.org/wiki/Candlestick_chart) to describe price movements of the stock values.
++ [Line Chart](hhttps://en.wikipedia.org/wiki/Line_chart) of the Adjusted Closing Price.
++ A prediction of the Adjusted Closing Price in next 20 days using basic [exponential smoothing technique](https://en.wikipedia.org/wiki/Exponential_smoothing).
